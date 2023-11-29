@@ -27,6 +27,9 @@
       globe.controls().autoRotate = true;
       globe.controls().autoRotateSpeed = 0.35;
 
+      // set beginning coordinates
+      globeEl.current.pointOfView({ altitude: 1 });
+
     }, []);
 
     return <Globe
